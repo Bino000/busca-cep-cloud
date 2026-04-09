@@ -12,7 +12,7 @@
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CEP DIGITAL</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -77,8 +77,9 @@
             <label for="ddd">DDD</label>
           </div>
           </table>
-          <a onclick="mostrar()" class="waves-effect waves-light btn-small"><i class="material-icons left">search</i>Buscar</a>
-          <a  class="waves-effect waves-light btn-small"><i class="material-icons left">clear</i>Limpar</a>
+ <a onclick="buscarCEP()" class="btn-small">Buscar</a>
+          <a onclick="limpar()" class="btn-small red">Limpar</a>
+
         </div>
       </div>
       <div id="rua-tab" class="col s12">
@@ -87,7 +88,7 @@
            <table>
           <div class="input-field col s12 m6 l3">
             <i class="material-icons prefix">flag</i>
-            <input id="uf" type="text" class="validate active cor-azul">
+            <input id="uf" type="text" class="validate active">
             <label for="uf">UF</label>
           </div>
         </table>
@@ -95,7 +96,7 @@
            <table>
           <div class="input-field col s12 m6 l3">
             <i class="material-icons prefix">location_city</i>
-            <input id="cidade_search" type="text" class="validate active cor-azul">
+            <input id="cidade_search" type="text" class="validate ">
             <label for="cidade_search">Cidade</label>
           </div>
         </table>
@@ -103,12 +104,13 @@
            <table>
           <div class="input-field col s12 m6 l3">
             <i class="material-icons prefix">streetview</i>
-            <input  id="logradouro" type="text" class="validate active cor-azul">
+            <input  id="logradouro" type="text" class="validate active">
             <label for="logradouro">Logradouro</label>
           </div>
           </table>
-          <a onclick="buscarPorEndereco()" class="waves-effect waves-light btn-small"><i class="material-icons left">search</i>Buscar</a>
-          <a  class="waves-effect waves-light btn-small"><i class="material-icons left">clear</i>Limpar</a>
+          <a onclick="buscarCEP()" class="btn-small">Buscar</a>
+          <a onclick="limpar()" class="btn-small red">Limpar</a>
+
         </div>
       </div>
       <div id="log-tab" class="col s12">
