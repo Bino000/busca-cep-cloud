@@ -28,39 +28,96 @@
       <h1  class="header adjust-top center orange-text"> Busca CEP</h1>
       <div class="row center">
         <h5  class="header adjust-top col s12 light">Consulta de CEP</h5>
-        <!-- INPUT CEP -->
-        <div class="input-field col s12 m6 l3">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="cep" type="text" class="validate">
-          <label for="cep">CEP</label>
-        </div>
-        <!-- INPUT CIDADE  -->
-        <div class="input-field col s12 m6 l3">
-          <i class="material-icons prefix">location_city</i>
-          <input id="cidade" type="text" class="validate active">
-          <label for="cidade">Cidade</label>
-        </div>
-        <!-- INPUT BAIRRO  -->
-        <div class="input-field col s12 m6 l3">
-          <i class="material-icons prefix">location_on</i>
-          <input id="bairro" type="text" class="validate active">
-          <label for="bairro">Bairro</label>
-        </div>
-        <!-- INPUT ESTADO  -->
-        <div class="input-field col s12 m6 l3">
-          <i class="material-icons prefix">map</i>
-          <input id="estado" type="text" class="validate active">
-          <label for="estado">Estado</label>
-        </div>
-        <!-- INPUT DDD  -->
-        <div class="input-field col s12 m6 l3">
-          <i class="material-icons prefix">local_phone</i>
-          <input id="ddd" type="text" class="validate active">
-          <label for="ddd">DDD</label>
-        </div>
+      <ul class="tabs">
+        <li class="tab col s3"><a class="active" href="#cep-tab">CEP</a></li>
+        <li class="tab col s3"><a href="#rua-tab">RUA</a></li>
+        <li class="tab col s3"><a href="#log-tab">LOG</a></li>
+      </ul>
+      </div>
+      <div id="cep-tab" class="col s12">
+        <div class="row center">
+          <!-- INPUT CEP -->
+           <table>
+          <div class="input-field col s12 m6 l3">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="cep" type="text" class="validate">
+            <label for="cep">CEP</label>
+          </div>
+        </table>
+          <!-- INPUT CIDADE  -->
+           <table>
+          <div class="input-field col s12 m6 l3">
+            <i class="material-icons prefix">location_city</i>
+            <input id="cidade" type="text" class="validate active">
+            <label for="cidade">Cidade</label>
+          </div>
+        </table>
+          <!-- INPUT BAIRRO  -->
+           <table>
+          <div class="input-field col s12 m6 l3">
+            <i class="material-icons prefix">location_on</i>
+            <input id="bairro" type="text" class="validate active">
+            <label for="bairro">Bairro</label>
+          </div>
+        </table>
 
-        <a onclick="mostrar()" class="waves-effect waves-light btn-small"><i class="material-icons left">search</i>Buscar</a>
-        <a  class="waves-effect waves-light btn-small"><i class="material-icons left">clear</i>Limpar</a>
+          <!-- INPUT ESTADO  -->
+           <table>
+          <div class="input-field col s12 m6 l3">
+            <i class="material-icons prefix">map</i>
+            <input id="estado" type="text" class="validate active">
+            <label for="estado">Estado</label>
+          </div>
+          </table>
+          <!-- INPUT DDD  -->
+           <table>
+          <div class="input-field col s12 m6 l3">
+            <i class="material-icons prefix">local_phone</i>
+            <input id="ddd" type="text" class="validate active">
+            <label for="ddd">DDD</label>
+          </div>
+          </table>
+          <a onclick="mostrar()" class="waves-effect waves-light btn-small"><i class="material-icons left">search</i>Buscar</a>
+          <a  class="waves-effect waves-light btn-small"><i class="material-icons left">clear</i>Limpar</a>
+        </div>
+      </div>
+      <div id="rua-tab" class="col s12">
+        <div class="row center">
+          <!-- INPUT UF -->
+           <table>
+          <div class="input-field col s12 m6 l3">
+            <i class="material-icons prefix">flag</i>
+            <input id="uf" type="text" class="validate active cor-azul">
+            <label for="uf">UF</label>
+          </div>
+        </table>
+          <!-- INPUT CIDADE SEARCH -->
+           <table>
+          <div class="input-field col s12 m6 l3">
+            <i class="material-icons prefix">location_city</i>
+            <input id="cidade_search" type="text" class="validate active cor-azul">
+            <label for="cidade_search">Cidade</label>
+          </div>
+        </table>
+          <!-- INPUT LOGRADOURO -->
+           <table>
+          <div class="input-field col s12 m6 l3">
+            <i class="material-icons prefix">streetview</i>
+            <input  id="logradouro" type="text" class="validate active cor-azul">
+            <label for="logradouro">Logradouro</label>
+          </div>
+          </table>
+          <a onclick="buscarPorEndereco()" class="waves-effect waves-light btn-small"><i class="material-icons left">search</i>Buscar</a>
+          <a  class="waves-effect waves-light btn-small"><i class="material-icons left">clear</i>Limpar</a>
+        </div>
+      </div>
+      <div id="log-tab" class="col s12">
+        <div class="row center">
+          <p>Resultados da busca por endereço:</p>
+          <div id="resultados">
+            <!-- Results will be displayed here -->
+          </div>
+        </div>
       </div>
 
     </div>
