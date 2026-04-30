@@ -1,0 +1,9 @@
+<svg width="300" height="120" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="300" height="120" rx="12" fill="#4fc3f7"/>
+  <path d="M60 15 C42 15 28 29 28 50 C28 71 60 95 60 95 C60 95 92 71 92 50 C92 29 78 15 60 15Z" fill="white"/>
+  <circle cx="60" cy="49" r="13" fill="#4fc3f7"/>
+  <circle cx="60" cy="49" r="6" fill="white"/>
+  <text x="108" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="white" letter-spacing="2">CEP</text>
+  <text x="108" y="72" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="white" letter-spacing="3">DIGITAL</text>
+  <text x="108" y="90" font-family="Arial, sans-serif" font-size="10" font-weight="400" fill="#e0f7fa" letter-spacing="1">consulta de endereços</text>
+</svg>
