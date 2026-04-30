@@ -99,14 +99,9 @@ code .
 - O Netlify detecta automaticamente os arquivos e faz o deploy
 - Não é necessário configurar build commands para projetos HTML/CSS/JS puro
 
-**5. Domínio personalizado (opcional)**
-- Vá em **"Site settings" → "Domain management"**
-- Clique em **"Options" → "Edit site name"**
-- Defina um nome amigável, ex: `buscacep-seunome-nr`
-- O link final ficará: `https://buscacep-seunome-nr.netlify.app`
 
-**6. Link final da aplicação**
-> 🔗 [https://buscacep-seunome-nr.netlify.app](https://buscacep-seunome-nr.netlify.app)
+**5. Link final da aplicação**
+> 🔗 [https://buscacep-marcosbino-nr.netlify.app/)
 
 > **Importante:** O Netlify já serve o site em HTTPS automaticamente, o que é obrigatório para o PWA funcionar (Service Worker exige HTTPS).
 
