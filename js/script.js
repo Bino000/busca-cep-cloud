@@ -1,4 +1,4 @@
-n adicionarLog(texto) {
+function adicionarLog(texto) {
   let log = document.createElement("li")
   log.className = "collection-item"
   log.innerText = texto
@@ -130,4 +130,13 @@ function buscarCidades(uf) {
 
 window.onload = function () {
   carregarUFs()
+}
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then(reg => console.log("[PWA] SW registrado:", reg.scope))
+      .catch(err => console.error("[PWA] Erro:", err))
+  })
 }
